@@ -38,11 +38,11 @@ def read_single_inputs():
         pinb = isr.get_pin(pin).value
         if pinb == False:
             gp.release_buttons(gamepad_button_num)
-            print(" release", gamepad_button_num, end="")
+            print("Rel:", gamepad_button_num, end=" ")
         else:
             gp.press_buttons(gamepad_button_num)
-            print(" press", gamepad_button_num, end="")
-
+            print("Press:", gamepad_button_num, end=" ")
+    print("")
 
 
 # Main
